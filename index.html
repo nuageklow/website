@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<title>Welcome to Karen Wong's world!</title>
+	<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="main_style.css">
+
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="#about">About</a></li>
+		<li><a href="#proj">Projects</a></li>
+		<li><a href="#resume">Resume</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<header>
+		<h1>Karen Wong</h1>
+	</header>
+
+	<section id="about">
+		<img class="logo" src="images/kwonglogo.jpg">
+		<h1>About Me</h1>
+		<img class="profile" src="images/me_brock.jpg">
+		<p style = "text-align:left;font-size: 18px">
+			<br><br>
+			About Karen Wong BSc.<br>
+			From: Hong Kong<br>
+			Education background: BSc in Physical Geography, Brock University; Graduate Certificate in Geographic Information System - Geospatial Management, Niagara College<br>
+			Known languages: English ,Cantonese, Mandarin, German, a litte Latin, a little Japanese, a little Italian<br>
+			Known programming languages: HTML5, CSS3, Visual Basic, JavaScript, Python, R, Ruby, jQuery<br>
+			Hobbies: Playing musical instruments (i.e. Piano, Violin, Chiense musical instruments), Swimming, Badminton, Tennis, Travelling, Gaming, Learning new languages
+			Favourites to read: Reader Digest Canada<br>
+			Cannot live without websites: Youtube, TEDTalk, BBC Capital<br>
+			Passion: Mapping and coding
+		</p>
+	</section>
+
+	<section id="proj">
+		<h1>GIS Projects</h1>
+		<table style="width:80%" align="center">
+			<tr>
+				<td><h3>Thesis Project<br>Forest Road Optimization</h3></td>
+				<td><h3>Other Projects</h3></td>
+			</tr>
+			<tr>
+				<td><a href= "projects.html#roadopt">
+				<img class="proj" src="images/roadopt.jpg" alt="roadopt"></a></td>
+				<td><a href= "projects.html#otherproj">
+				<img class="proj" src="images/9302d3.jpg" alt="otherproj"></a></td>
+			</tr>
+		</table>
+	</section>
+
+	<section id="resume">
+		<h1>Resume</h1>
+		<embed class="resume" src="projectpdfs/resu.pdf#toolbar=0" width= "750px" height="1200px"/>
+	</section>
+
+	<section id="contact">
+		<h1>Contact Me</h1>
+		<a href="https://www.linkedin.com/in/karen-wong-72936a164/"><img src="images/linkedin.png"></a>
+		<a href="mailto:karenwong464526@gmail.com"><img src="images/email.png"></a>
+		<a href="https://github.com/nuageklow"><img src="images/github.png"></a>
+	</section>
+
+	<!-- ADD JQUERY HERE -->
+
+	<script src = "js/jquery-1.12.0.min.js"></script>
+	<!-- need to connect to internet
+	<script src = "http://code.jquery.com/js/jquery-1.12.0.min.js"></script>
+	-->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $(".proj").mouseover(function(){
+	      $(this).animeate({
+	        left: 100,
+	      },1000);
+	    });
+	    $(".menu a").mouseover(function(){
+	      $(".active").removeClass("active");
+	      $(this).addClass("active");
+	    });
+	    $(".flexslider").flexslider({
+	      animation: "slide",
+	      animationSpeed: 2000,
+	    });
+	  })
+	</script>
+
+</body>
+</html>
