@@ -1,12 +1,19 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 	<title>Karen's Projects</title>
 	<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="main_style.css">
 </head>
 <body>
+	<!-- <ul class="menu">
+		<img class="logo" src="images/logo.png">
+		<li><a href="#about">About</a></li>
+		<li><a href="#proj">Projects</a></li>
+		<li><a href="#resume">Resume</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul> -->
   <ul class="menu">
     <li><a href="./index.html">Return to Main Page</li></a>
   </ul>
@@ -15,74 +22,21 @@
 		<h1>Projects</h1>
 	</header>
 	<section id="roadopt">
-		<h2>Forest Road Optimization</h2>
 		<img class="logo" src="images/kwonglogo.jpg">
-		<img class="logo" src="images/rayonieram.jpeg">
-		<table>
-			<tr>
-				<td style="padding: 50px;text-algin: left;">
-					<div class= "roadopt">
-			      
-
-Road construction is a costly procedure.  Road network optimization is an effective method to achieve extensive road network planning and cost-efficiency for road construction.  By developing a multi-criteria analysis for road optimization, road networks operations can sufficiently reduce construction and transportation costs.  The project goal is to develop a multi-criteria analysis for operational road networks within several harvest blocks at the Gordon Cosens Forest. A Python script was created to obtain the least cost path by inputting weighted factors in the harvest blocks. Five objectives with one overall objective were designed to determine the least cost path.
-
-	
-
-Project Familiarization
-
-	
-
-Research articles on road optimization and how each geological factor would affect road design was the focus of the literature review. Factors such as slope, water-crossings, tree density and soil type of an area have great effects on road planning. For examplea, steep slope that is greater than 10% or areas that are close to the water crossings are not suitable for building roads. These factors were used as parameters for the project model.  Enhanced training on ArcGIS and Python were required to increase progress of project. Four parameters were used to determine the least cost path in the project model: slope, water crossings, tree heights and tree density.
-
-	
-
-Data Processing
-
-
-	
-
-The retrieved data was categorized in four classes: satellite imagery; geodatabase; processed LiDAR raster images; and other supplemental files. Files such as DEM imageries and geodatabase that contained defined parameters as indicated above were investigated in detail. The supplemental files and the satellite imageries were helpful to understand the LiDAR imagery. The pre-processed data have been tested the compatibility with the designed model.
-
-	
-
-Model Execution and Optimization
-
-
-	
-
-The project model mainly consisted of 3 steps. Each parameter,the values from the raster file, was reclassified into 3 ranges. The four relcassifed raster files then were combined into 1 raster using ArcPy function Weighted Sum. By indicating the start and end point of the harvest area, a path was produced using ArcPy function Cost Path.
-
-	
-
-Result Comparison
-
-
-	
-
-The project model result is different than the actual existing road network. The 2 main reasons would be the start/end points and intersecting water crossings. Adjustments on the start/end points will improve the result. The ideal project model was designed not to intersect with any water bodies in the harvest blocks as it costs more to build roads on any water crossings. While the project model aimed to avoid all the water bodies, some of the roads from the actual existing network intersect with some of the water bodies.
-
-	
-
-Conclusion
-
-
-	
-
-After a thorough understanding on the concept of Road Network Optimization and provided data from the client, the project model as a Python script was constructed as the final deliverable. The result is different than the actual existing road network as the ideal model was designed based on the conditions on research and literature review and confirmation with the client. The client is recommended to adjust some of the variables in order to improve the result accuracy which can help the company to plan the actual least cost path on the harvest area.
-					</div>
-				</td>
-				<td>
-					<div class="flexslider" style="height: 75%;">
-						<ul class="slides">
-							<li><img src="images/scriptsample.jpg"></li>
-							<li><img src="images/mis.jpg"></li>
-							<li><img src="images/sul.jpg"></li>
-							<li><img src="images/wan.jpg"></li>
-						</ul>
-					</div>
-				</td>
-			</tr>
-		</table>
+		<h2>Forest Road Optimization</h2>
+    <!-- <div class= "roadopt"> -->
+      <p>Road construction is a costly procedure. Road network optimization is an effective method to achieve extensive road network planning and cost-efficiency for road construction. By developing a multi-criteria analysis for road optimization, road networks operations can sufficiently reduce construction and transportation costs. The project goal was to develop a multi-criteria analysis for operational road networks within several harvest blocks at the Gordon Cosens Forest. Five objectives with one overall objective were designed to determine the least cost path.</p>
+	<p><i>Project Familiarization</i></p>
+	<p>Research articles on road optimization and how each geological factor would affect road design was the focus of the literature review. Factors such as slope, water-crossings, tree density and soil type of an area have great effects on road planning. For examplea, steep slope that is greater than 10% or areas that are close to the water crossings are not suitable for building roads. These factors were used as parameters for the project model.  Enhanced training on ArcGIS and Python were required to increase progress of project. Four parameters were used to determine the least cost path in the project model: slope, water crossings, tree heights and tree density.</p>
+	<p><i>Data Processing</i></p>
+	<p>The retrieved data was categorized in four classes: satellite imagery; geodatabase; processed LiDAR raster images; and other supplemental files. Files such as DEM imageries and geodatabase that contained defined parameters as indicated above were investigated in detail. The supplemental files and the satellite imageries were helpful to understand the LiDAR imagery. The pre-processed data have been tested the compatibility with the designed model.</p>
+	<p><i>Model Execution and Optimization</i></p>
+	<p>The project model mainly consisted of 3 steps. Each parameter,the values from the raster file, was reclassified into 3 ranges. The four relcassifed raster files then were combined into 1 raster using ArcPy function Weighted Sum. By indicating the start and end point of the harvest area, a path was produced using ArcPy function Cost Path.</p>
+	<p><i>Result Comparison</i></p>
+	<p>The project model result is different than the actual existing road network. The 2 main reasons would be the start/end points and intersecting water crossings. Adjustments on the start/end points will improve the result. The ideal project model was designed not to intersect with any water bodies in the harvest blocks as it costs more to build roads on any water crossings. While the project model aimed to avoid all the water bodies, some of the roads from the actual existing network intersect with some of the water bodies.</p>
+	<p><i>Conclusion</i></p>
+	<p>After a thorough understanding on the concept of Road Network Optimization and provided data from the client, the project model as a Python script was constructed as the final deliverable. The result is different than the actual existing road network as the ideal model was designed based on the conditions on research and literature review and confirmation with the client. The client is recommended to adjust some of the variables in order to improve the result accuracy which can help the company to plan the actual least cost path on the harvest area.</p>
+		<!-- </div> -->
 	</section>
 
 	<section id="otherproj">
@@ -97,20 +51,19 @@ After a thorough understanding on the concept of Road Network Optimization and p
 		<div class="pdf" align-items="center">
 			<table style="width:100%" align="center">
 			  <tr>
-			    <td>Total Minutes Delayed at Toronto Transit Commission<br>Subway Stations<br>
-						<embed src="projectpdfs/9318d4b.pdf#toolbar=0" width= "100%" height="200%"/>
+			    <td>Total Minutes Delayed at TTC Subway Stations<br>
+						<embed src="projectpdfs/9318d4b.pdf#toolbar=0" width= "50%" height="400px"/>
 					</td>
-			    <td>AutoCAD Raster Application<br>Digital Elevation Model and Road Network at Reddings, CA<br>
-						<embed src="projectpdfs/9315d2.pdf#toolbar=0" width= "100%" height="200%"/>
+			    <td>ArcGIS Georectification<br>
+						<embed src="projectpdfs/9315d2.pdf#toolbar=0" width= "50%" height="400px"/>
 					</td>
 			  </tr>
-				<br>
 			  <tr>
-			    <td>ERDAS IMAGINE<br>Comparison on Supervised Classification and Unsupervised Classification Images<br>
-						<embed src="projectpdfs/9216d1.pdf#toolbar=0" width= "100%" height="200%"/>
+			    <td>ArcPy Create Point Feature Classese<br>
+						<pre><code class = "pdf" src="projectpdfs/9317d3.py"></code></pre>
 						</td>
-			    <td>Geospatial Data Analysis on ArcGIS Model Builder<br>Weighted Overlay and Fuzzy Overlay Analysis on Finlay's Fictitious Ferns<br>
-						<embed src="projectpdfs/9318d3.pdf#toolbar=0" width= "100%" height="200%"/>
+			    <td>Jackson<br>
+						<embed src="projectpdfs/9318d3.pdf#toolbar=0" width= "50%" height="50%"/>
 					</td>
 			  </tr>
 			</table>
